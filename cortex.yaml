@@ -1,0 +1,19 @@
+---
+info:
+  title: Terraform Provider Rapid7
+  description: Rapid7 Terraform Provider
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/terraform-provider-rapid7
+  x-cortex-tag: terraform-provider-rapid7
+  x-cortex-type: service
+  x-cortex-groups:
+  - go
+  - terraform
+  - infra
+  x-cortex-domain-parents:
+  - tag: platform-delivery
+openapi: 3.0.1
+servers:
+- url: "/"
