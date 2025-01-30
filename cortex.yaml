@@ -12,6 +12,7 @@ info:
   - go
   - terraform
   - infra
+  - exposure:internal-ship
   x-cortex-domain-parents:
   - tag: pd-services
 openapi: 3.0.1
