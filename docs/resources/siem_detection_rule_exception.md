@@ -64,13 +64,16 @@ resource "rapid7_siem_detection_rule_exception" "example_exception" {
   * `CREATES_INVESTIGATIONS` - An investigation is opened. Priority is required to be one of `LOW` `MEDIUM` `HIGH` `CRITICAL`
 - `logic` (Attributes) Logic defining when the exception is applied (see [below for nested schema](#nestedatt--logic))
 - `name` (String) Name of the exception
+- `rule_rrn` (String) RRN of a detection or custom detection rule which the exception will be applied to
+
+### Optional
+
 - `priority` (String) Priority override applied when the exception matches
   * `INFO` - Informational
   * `LOW` - Low
   * `MEDIUM` - Medium
   * `HIGH` - High
   * `CRITICAL` - Critical
-- `rule_rrn` (String) RRN of a detection or custom detection rule which the exception will be applied to
 
 ### Read-Only
 
@@ -83,7 +86,7 @@ Optional:
 
 - `conditions` (Attributes List) Simple key-value pairs of conditions (see [below for nested schema](#nestedatt--logic--conditions))
 - `leql` (String) LEQL query logic matching events the exception will apply to
-- `testcases` (Attributes List) A testcase evaluates the content of a provided payload against the rule logic to ensure the rule behaves as expected (see [below for nested schema](#nestedatt--logic--testcases))
+- `testcases` (Attributes List) A testcase evaluates the content of a provided payload against the rule logic to ensure the rule behaves as expected. When creating a plan the testcases for all changed rules are evaluated and must pass for the plan to succeed. (see [below for nested schema](#nestedatt--logic--testcases))
 
 <a id="nestedatt--logic--conditions"></a>
 ### Nested Schema for `logic.conditions`
