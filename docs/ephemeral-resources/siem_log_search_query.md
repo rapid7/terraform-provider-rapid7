@@ -36,8 +36,8 @@ Use this data source to retrieve the results of a [log search query](https://doc
 
 Required:
 
-- `from` (String) Timestamp of oldest log line considered
-- `to` (String) Timestamp of newest log line considered
+- `from` (String) RFC3339 timestamp of oldest log line considered
+- `to` (String) RFC3339 timestamp of newest log line considered
 
 
 <a id="nestedatt--results"></a>

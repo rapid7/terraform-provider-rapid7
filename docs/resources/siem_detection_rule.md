@@ -78,7 +78,7 @@ Must include a from clause with an event_type condition and where clause with a 
 
 Optional:
 
-- `testcases` (Attributes List) A testcase evaluates the content of a provided payload against the rule logic to ensure the rule behaves as expected (see [below for nested schema](#nestedatt--logic--testcases))
+- `testcases` (Attributes List) A testcase evaluates the content of a provided payload against the rule logic to ensure the rule behaves as expected. When creating a plan the testcases for all changed rules are evaluated and must pass for the plan to succeed. (see [below for nested schema](#nestedatt--logic--testcases))
 
 <a id="nestedatt--logic--testcases"></a>
 ### Nested Schema for `logic.testcases`
