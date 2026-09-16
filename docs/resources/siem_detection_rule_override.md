@@ -29,7 +29,7 @@ resource "rapid7_siem_detection_rule_override" "rules_0" {
 
 ### Required
 
-- `rule_rrn` (String) Identifier of the rule which this override is applied to
+- `rule_rrn` (String) Identifier of the rule which the override is applied to
 
 ### Optional
 
